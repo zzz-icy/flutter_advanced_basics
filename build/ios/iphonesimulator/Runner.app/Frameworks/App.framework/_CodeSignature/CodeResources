@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		ME0cAg6cl/bTZmwXEVgMugDccUI=
+		rf8bNMBz9tvll9V/gD9i3OjgRYM=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		oG5/OGn+vw7vp/nu5DUDoZJ4nFc=
+		o+kTz3srvXfjQqqN22GIuCXNPW4=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -23,6 +23,10 @@
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
 		MtGhqy1N83LymF+xVlvBDq1bNtY=
+		</data>
+		<key>flutter_assets/assets/images/quiz-logo.png</key>
+		<data>
+		qcTE23gfABpgJo5DVE5jnJBsmqE=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -34,7 +38,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		psj4Le48hodenfT8ZSdcnbRyi+8=
+		Yj/zrQ3w3nneY7JHepw4pveaVw8=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -55,14 +59,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AK9VrT1vIYmP534P8JLRoc2lLJQbaGDpko1FyK+MCV0=
+			ff/xfwCPKC22JfYtC1EctbF0Wve6X1/gJk/UyvFmaNk=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sps95+7JukayebvM0TLjL1LW1VXXndpKp/O8tOm9ZR8=
+			F36YkbA72SzN1jKZ40vVrD5hSL5RLItLnPRD7UWVn2k=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -77,6 +81,13 @@
 			<key>hash2</key>
 			<data>
 			eH0WBS/Rqj+Xj/ifDN1v0/73XCfI+QjAo+WtfyEImFY=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/quiz-logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m3XV0es7AC7R4ZQsKLJwHrHcXEYI+URRE+FuH2h/F1c=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -97,7 +108,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ZdWr94OqPyRGOQ3jIqjcOTXn/pjQxwFoKv2EYgfMQk=
+			DPgTpwAafmc+wWP0nqkxsgDxkEgrMUAQTIxrtah6shY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
