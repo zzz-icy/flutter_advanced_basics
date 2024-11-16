@@ -29,6 +29,9 @@ class _QuizState extends State<Quiz> {
   // }
   //* this approach doesn't require initState
   var activeScreen = 'start-screen';
+
+// can use final here, because later we are just editing the existing list
+  final List<String> selectedAnswers = [];
   void switchScreen() {
     setState(() {
       // will re-run the build method
@@ -36,11 +39,15 @@ class _QuizState extends State<Quiz> {
     });
   }
 
+  void chooseAnswer(String answer) {
+    selectedAnswers.add(answer);
+  }
+
   @override
   Widget build(context) {
     final screenWidget = activeScreen == 'start-screen'
         ? StartScreen(switchScreen)
-        : const QuestionsScreen();
+        : QuestionsScreen(onSelectAnswer: chooseAnswer);
     return MaterialApp(
       home: Scaffold(
         body: Container(
