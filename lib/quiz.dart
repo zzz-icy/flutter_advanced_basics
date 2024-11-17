@@ -33,7 +33,7 @@ class _QuizState extends State<Quiz> {
   var activeScreen = 'start-screen';
 
 // can use final here, because later we are just editing the existing list
-  List<String> selectedAnswers = [];
+  final List<String> _selectedAnswers = [];
   void switchScreen() {
     setState(() {
       // will re-run the build method
@@ -42,8 +42,8 @@ class _QuizState extends State<Quiz> {
   }
 
   void chooseAnswer(String answer) {
-    selectedAnswers.add(answer);
-    if (selectedAnswers.length == questions.length) {
+    _selectedAnswers.add(answer);
+    if (_selectedAnswers.length == questions.length) {
       setState(() {
         // will re-run the build method
         activeScreen = 'results_screen';
@@ -58,7 +58,7 @@ class _QuizState extends State<Quiz> {
         : QuestionsScreen(onSelectAnswer: chooseAnswer);
 
     if (activeScreen == 'results_screen') {
-      screenWidget = ResultsScreen(chosenAnswers: selectedAnswers);
+      screenWidget = ResultsScreen(chosenAnswers: _selectedAnswers);
     }
     return MaterialApp(
       home: Scaffold(

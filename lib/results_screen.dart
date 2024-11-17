@@ -7,7 +7,8 @@ class ResultsScreen extends StatelessWidget {
 
   final List<String> chosenAnswers;
 
-  List<Map<String, Object>> getSummaryData() {
+// still a method. but can reference it like a property, but internally it behaves like a method
+  List<Map<String, Object>> get summaryData {
     final List<Map<String, Object>> summary = [];
 
     for (var i = 0; i < chosenAnswers.length; i++) {
@@ -23,7 +24,6 @@ class ResultsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final summaryData = getSummaryData();
     final totalAnswerNumber = chosenAnswers.length;
     final totalNumberOfCorrectAnswer = summaryData
         .where((data) => data['user_answer'] == data['correct_answer'])
