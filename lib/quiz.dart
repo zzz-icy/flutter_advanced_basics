@@ -1,4 +1,6 @@
+import 'package:adv_basics/data/questions.dart';
 import 'package:adv_basics/questions_screen.dart';
+import 'package:adv_basics/results_screen.dart';
 import 'package:adv_basics/start_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +33,7 @@ class _QuizState extends State<Quiz> {
   var activeScreen = 'start-screen';
 
 // can use final here, because later we are just editing the existing list
-  final List<String> selectedAnswers = [];
+  List<String> selectedAnswers = [];
   void switchScreen() {
     setState(() {
       // will re-run the build method
@@ -41,13 +43,23 @@ class _QuizState extends State<Quiz> {
 
   void chooseAnswer(String answer) {
     selectedAnswers.add(answer);
+    if (selectedAnswers.length == questions.length) {
+      setState(() {
+        // will re-run the build method
+        activeScreen = 'results_screen';
+      });
+    }
   }
 
   @override
   Widget build(context) {
-    final screenWidget = activeScreen == 'start-screen'
+    var screenWidget = activeScreen == 'start-screen'
         ? StartScreen(switchScreen)
         : QuestionsScreen(onSelectAnswer: chooseAnswer);
+
+    if (activeScreen == 'results_screen') {
+      screenWidget = ResultsScreen(chosenAnswers: selectedAnswers);
+    }
     return MaterialApp(
       home: Scaffold(
         body: Container(
